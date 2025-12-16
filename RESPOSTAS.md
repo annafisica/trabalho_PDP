@@ -3,9 +3,9 @@
 ## Identificação do Grupo
 
 - **Integrantes:**
-  1. Nome: Anna Elisa de Lara
-  2. Nome: Giselle de Oliveira Dias
-  3. Nome: Vitor Zago Capanema
+  1. Nome: Anna Elisa de Lara (annafisica@gmail.com)
+  2. Nome: Giselle de Oliveira Dias (simsgod@gmail.com)
+  3. Nome: Vitor Zago Capanema (zago.vitor@gmail.com)
   4. Nome: ---
 
 ---
@@ -150,8 +150,7 @@ Esse desbalanceamento, ainda que moderado, foi percebido no Recall baixo (0.3416
 
 ### 2.3 Por que usamos F1-Score e não apenas Accuracy neste caso?
 
-Porque o F1-Score, que é a média harmônica entre Precisão e Recall, mede o equilíbio entre identificar corretamente a classe  positiva e evitar erros de classificação. Neste caso, ele é mais adequado que o Accuracy porque o dataset é desbalanceado e o objetivo principal é identificar clientes que responderiam à campanha. O F1-Score evita interpretações enganosas e mostra que o modelo ainda apresenta desempenho insuficiente para o objetivo desejado.
----
+Porque o F1-Score, que é a média harmônica entre Precisão e recall, mede o equilíbrio entre identificar corretamente a classe positiva e evitar erros de classificação. Neste caso, ele é mais adequadro que a Accuracy porque o dataset é desbalanceado e o objetivo principal é identificar clientes que responderiam à campanha. O F1-Score evita interpretações enganosas e mostra que o modelo ainda apresenta desempenho insuficiente para o objetivo desejado.
 
 ## Parte 3: Validação de Dados
 
@@ -177,33 +176,81 @@ Grupo 2 - implementadas pela equipe de desenvolvimento:
 De forma suscinta, para garantir que a matéria-prima utilizada no aprendizado seja de alta qualidade e confiável, permitindo a construção de um modelo que contribua com uma tomada de decisão mais assertiva.
 
 Aprofundando a importância desta etapa no pipeline, a validação e limpeza dos dados antes do treinamento são essenciais pelos seguintes motivos:
-    1. Compreender o conjunto de dados, apoiando a identificação de padrões, distribuições e possíveis inconsistências (em conjunto com a etapa de exploração).
-    2. Assegurar a integridade estatística, evitando que valores inválidos distorçam o aprendizado do modelo.
-    3. Eliminar ou impedir a entrada de erros, como valores nulos, duplicados, fora de faixa, categorias inválidas ou tipos de dados errado.
-    4. Prevenir divergências significativas entre dados de treinamento e dados de produção, garantindo consistência ao longo do ciclo de vida do modelo.
-    5. Reduzir o risco de previsões incorretas ou enviesadas, causadas por dados inconsistentes.
-    6. Definir explicitamente o contrato de dados esperado pelo modelo, deixando claras as estruturas, tipos e valores permitidos.
-    7. Detectar anomalias de forma proativa, interrompendo o pipeline imediatamente quando dados inválidos são identificados (princípio de fail fast).
-    8. Economizar custos computacionais e operacionais, evitando treinar modelos com dados inadequados.
-    9. Mitigar degradação silenciosa do modelo, especialmente em ambientes produtivos.
+1. Compreender o conjunto de dados, apoiando a identificação de padrões, distribuições e possíveis inconsistências (em conjunto com a etapa de exploração).
+2. Assegurar a integridade estatística, evitando que valores inválidos distorçam o aprendizado do modelo.
+3. Eliminar ou impedir a entrada de erros, como valores nulos, duplicados, fora de faixa, categorias inválidas ou tipos de dados errado.
+4. Prevenir divergências significativas entre dados de treinamento e dados de produção, garantindo consistência ao longo do ciclo de vida do modelo.
+5. Reduzir o risco de previsões incorretas ou enviesadas, causadas por dados inconsistentes.
+6. Definir explicitamente o contrato de dados esperado pelo modelo, deixando claras as estruturas, tipos e valores permitidos.
+7. Detectar anomalias de forma proativa, interrompendo o pipeline imediatamente quando dados inválidos são identificados (princípio de fail fast).
+8. Economizar custos computacionais e operacionais, evitando treinar modelos com dados inadequados.
+9. Mitigar degradação silenciosa do modelo, especialmente em ambientes produtivos.
 
----
 
 ## Parte 4: Versionamento
 
 ### 4.1 Liste os commits que vocês fizeram (copie do git log):
 
-<!-- Execute: git log --oneline e cole aqui -->
+![print do git log](image.png)
 
-```
-(cole o output do git log aqui)
-```
+commit ae8c1dfa1d787a907c609cd05f98e3aa07bfd88e (HEAD -> main, origin/main, origin/HEAD)
+Author: Simsgod <simsgod@gmail.com>
+Date:   Tue Dec 16 18:34:09 2025 -0300
+
+    Atualização com dados do git log
+
+commit b6773800612c188845d7649d1ecb84370b2fc8ba
+Author: Simsgod <simsgod@gmail.com>
+Date:   Mon Dec 15 23:30:20 2025 -0300
+
+    Atualiza respostas e ignora artefatos de modelo treinado
+
+commit d38e994d4bc2bfdbbdefe1a0d1409f8526cf7f62
+Author: Simsgod <simsgod@gmail.com>
+Date:   Mon Dec 15 12:35:56 2025 -0300
+
+    resposta_1
+
+commit 70e70372ab95358ee098b6daec2d9556b9dc3792
+Merge: 511a24d c533a40
+Author: Anna Lara <annafisica@gmail.com>
+Date:   Mon Dec 15 11:09:45 2025 -0300
+
+Merge pull request #1 from vitor-zago/main
+
+    Etapas 3 e 4 concluídas
+
+commit c533a4072cdcfbe22e5735ac4dab720d09b36527
+Author: VITOR-ZAGO <zago.vitor@gmail.com>
+Date:   Mon Dec 15 10:38:30 2025 -0300
+
+    Inclusão da pasta Modelos/arquivo treinar.py/ arquivo validar.py/ modificação do arquivo carregar.py
+
+commit 511a24dc64b175bf41ccb79d2b674e839e50387a
+Author: Anna Elisa de Lara <annafisica@gmail.com>
+Date:   Wed Dec 10 22:58:54 2025 -0300
+
+    Atualização do arquivo "RESPOSTAS.md"
+    com informações relacionadas às etapas 1 e 2 após sua conclusão.
+
+commit a788ae3f7b13a1a12c8cd4ff0247317401fc871a
+Author: Anna Elisa de Lara <annafisica@gmail.com>
+Date:   Wed Dec 10 22:36:05 2025 -0300
+
+    Etapas 1 e 2 concluídas.
+
+commit 9462cd3858eb04141b18d9824f58af063521a45f
+Author: Anna Elisa de Lara <annafisica@gmail.com>
+Date:   Wed Dec 10 21:36:44 2025 -0300
+
+    Commit Inicial - Criação do Repositório com
+    arquivos iniciais disponibilizados pelo professor.
+(END)
 
 ### 4.2 Por que mensagens de commit descritivas são importantes?
 
 Mensagens de commit descritivas são essenciais para manter um histórico claro do projeto, permitindo entender o que foi alterado, quando, por quem e qual o impacto da alteração. Elas facilitam manutenção, rollback, trabalho em equipe e rastreabilidade das mudanças ao longo do tempo.
 
----
 
 ## Parte 5: Reflexão (Opcional)
 
@@ -217,7 +264,8 @@ Como o objetivo do negócio é identificar os clientes que respondem à campanha
 
 Essa estratégia poderia ser implementada no pipeline por meio de modelos mais robustos, como o Random Forest, por exemplo, avaliando seu desempenho principalmente por Recall e F1-Store.
 
-Além disso, o pipeline poderia ser aprimorado com melhor separação entre EDA, validação e transformações em etapas independentes, inclusão de testes automatizados e monitoramento de data dift e model drift, aproximando-o de um cenário real de produção.
----
+Além disso, o pipeline poderia ser aprimorado com melhor separação entre EDA, validação e transformações em etapas independentes,inclusão de testes automatizados e monitoramento de data drift e model drift, aproximando-o de um cenário real de produção.
 
-**Data de entrega:** **15/12/2025**/**\_\_**
+
+
+**Data de entrega:** **16/12/2025**/**\_\_**
