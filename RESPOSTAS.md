@@ -150,8 +150,7 @@ Esse desbalanceamento, ainda que moderado, foi percebido no Recall baixo (0.3416
 
 ### 2.3 Por que usamos F1-Score e não apenas Accuracy neste caso?
 
-Porque o F1-Score, que é a média harmônica entre Precisão e Recall, mede o equilíbio entre identificar corretamente a classe  positiva e evitar erros de classificação. Neste caso, ele é mais adequado que o Accuracy porque o dataset é desbalanceado e o objetivo principal é identificar clientes que responderiam à campanha. O F1-Score evita interpretações enganosas e mostra que o modelo ainda apresenta desempenho insuficiente para o objetivo desejado.
----
+Porque o F1-Score, que é a média harmônica entre Precisão e recall, mede o equilíbrio entre identificar corretamente a classe positiva e evitar erros de classificação. Neste caso, ele é mais adequadro que a Accuracy porque o dataset é desbalanceado e o objetivo principal é identificar clientes que responderiam à campanha. O F1-Score evita interpretações enganosas e mostra que o modelo ainda apresenta desempenho insuficiente para o objetivo desejado.
 
 ## Parte 3: Validação de Dados
 
@@ -177,33 +176,29 @@ Grupo 2 - implementadas pela equipe de desenvolvimento:
 De forma suscinta, para garantir que a matéria-prima utilizada no aprendizado seja de alta qualidade e confiável, permitindo a construção de um modelo que contribua com uma tomada de decisão mais assertiva.
 
 Aprofundando a importância desta etapa no pipeline, a validação e limpeza dos dados antes do treinamento são essenciais pelos seguintes motivos:
-    1. Compreender o conjunto de dados, apoiando a identificação de padrões, distribuições e possíveis inconsistências (em conjunto com a etapa de exploração).
-    2. Assegurar a integridade estatística, evitando que valores inválidos distorçam o aprendizado do modelo.
-    3. Eliminar ou impedir a entrada de erros, como valores nulos, duplicados, fora de faixa, categorias inválidas ou tipos de dados errado.
-    4. Prevenir divergências significativas entre dados de treinamento e dados de produção, garantindo consistência ao longo do ciclo de vida do modelo.
-    5. Reduzir o risco de previsões incorretas ou enviesadas, causadas por dados inconsistentes.
-    6. Definir explicitamente o contrato de dados esperado pelo modelo, deixando claras as estruturas, tipos e valores permitidos.
-    7. Detectar anomalias de forma proativa, interrompendo o pipeline imediatamente quando dados inválidos são identificados (princípio de fail fast).
-    8. Economizar custos computacionais e operacionais, evitando treinar modelos com dados inadequados.
-    9. Mitigar degradação silenciosa do modelo, especialmente em ambientes produtivos.
+1. Compreender o conjunto de dados, apoiando a identificação de padrões, distribuições e possíveis inconsistências (em conjunto com a etapa de exploração).
+2. Assegurar a integridade estatística, evitando que valores inválidos distorçam o aprendizado do modelo.
+3. Eliminar ou impedir a entrada de erros, como valores nulos, duplicados, fora de faixa, categorias inválidas ou tipos de dados errado.
+4. Prevenir divergências significativas entre dados de treinamento e dados de produção, garantindo consistência ao longo do ciclo de vida do modelo.
+5. Reduzir o risco de previsões incorretas ou enviesadas, causadas por dados inconsistentes.
+6. Definir explicitamente o contrato de dados esperado pelo modelo, deixando claras as estruturas, tipos e valores permitidos.
+7. Detectar anomalias de forma proativa, interrompendo o pipeline imediatamente quando dados inválidos são identificados (princípio de fail fast).
+8. Economizar custos computacionais e operacionais, evitando treinar modelos com dados inadequados.
+9. Mitigar degradação silenciosa do modelo, especialmente em ambientes produtivos.
 
----
 
 ## Parte 4: Versionamento
 
 ### 4.1 Liste os commits que vocês fizeram (copie do git log):
 
-<!-- Execute: git log --oneline e cole aqui -->
+![alt text](image.png)
 
-```
-(cole o output do git log aqui)
-```
+
 
 ### 4.2 Por que mensagens de commit descritivas são importantes?
 
 Mensagens de commit descritivas são essenciais para manter um histórico claro do projeto, permitindo entender o que foi alterado, quando, por quem e qual o impacto da alteração. Elas facilitam manutenção, rollback, trabalho em equipe e rastreabilidade das mudanças ao longo do tempo.
 
----
 
 ## Parte 5: Reflexão (Opcional)
 
@@ -217,7 +212,8 @@ Como o objetivo do negócio é identificar os clientes que respondem à campanha
 
 Essa estratégia poderia ser implementada no pipeline por meio de modelos mais robustos, como o Random Forest, por exemplo, avaliando seu desempenho principalmente por Recall e F1-Store.
 
-Além disso, o pipeline poderia ser aprimorado com melhor separação entre EDA, validação e transformações em etapas independentes, inclusão de testes automatizados e monitoramento de data dift e model drift, aproximando-o de um cenário real de produção.
----
+Além disso, o pipeline poderia ser aprimorado com melhor separação entre EDA, validação e transformações em etapas independentes,inclusão de testes automatizados e monitoramento de data drift e model drift, aproximando-o de um cenário real de produção.
 
-**Data de entrega:** **15/12/2025**/**\_\_**
+
+
+**Data de entrega:** **16/12/2025**/**\_\_**
